@@ -66,12 +66,9 @@ endif
 # try to generate a unique GDB port
 GDBPORT	:= $(shell expr `id -u` % 5000 + 25000)
 
-<<<<<<< HEAD
+
 CC	:= $(GCCPREFIX)gcc-4.8 -pipe
-=======
-CC	:= $(GCCPREFIX)gcc -pipe
 GDB	:= $(GCCPREFIX)gdb
->>>>>>> 2d1187aa3ce762bb4dbeb3cbe98fd6cd6753e997
 AS	:= $(GCCPREFIX)as
 AR	:= $(GCCPREFIX)ar
 LD	:= $(GCCPREFIX)ld
